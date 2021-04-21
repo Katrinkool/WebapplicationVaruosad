@@ -10,7 +10,7 @@
 
         public string Name { get; set; } = "";
 
-        public string SerialNumber { get; set; } = "";
+        public string Serial { get; set; } = "";
 
         public string CarModel { get; set; } = "";
 

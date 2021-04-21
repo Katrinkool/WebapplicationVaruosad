@@ -84,11 +84,12 @@ namespace WebApplicationVaruosad.Controllers
             {
                 query = query.Where(part => part.CarModel.Equals(queryParams.CarModel));
             }
+            if (queryParams.Serial.Length > 0)
+            {
+                query = query.Where(part=> part.Serial.Equals(queryParams.Serial));
+            }
 
-
-
-
-            return query.Skip((queryParams.Page - 1 )* queryParams.PageSize).Take(queryParams.PageSize).ToList(); // vastus koos Pagination'ga
+                return query.Skip((queryParams.Page - 1 )* queryParams.PageSize).Take(queryParams.PageSize).ToList(); // vastus koos Pagination'ga
 
         }
 
