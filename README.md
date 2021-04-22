@@ -3,7 +3,6 @@
 This application is designed to read data from the LE.txt file. The data divided into pages. On each page 30 items/lines. The data can be read from the specified port named in the launchsettings.json file as applicationUrl.
 Example path: http://localhost:44375/api/parts  
 
-All data received in response is sorted alphabetically.
 Fo using the search:
 - To read the specified page use the query: path+?page="number of the page"  
 Example publish find page no 4 with standard ie 30 items in page,   http://localhost:44375/api/parts?page=4
